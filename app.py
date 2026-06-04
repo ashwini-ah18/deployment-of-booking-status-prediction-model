@@ -4,14 +4,13 @@ import keras
 import pandas as pd
 from keras.models import load_model
 
-
-#provide tab title
+# Provide Tab title
 st.set_page_config("Deployment Project")
-#provide the page title 
-st.title("Booking Statuse prediction Model")
-#mention description of the problem statement or if you want to mention your name
+# Provide the page title
+st.title("Booking Status Prediction Model")
+# Mention description of the problem statement or if you want to mention your name
 st.subheader("This project takes multiple details as input and predicts whether booking status is approved or not")
-st.subheader("By Ashwini Audhutwar")
+st.subheader("By Sindhura Kuntamukkula")
 
 # Consider below features as input fields in the webpage.
 # 'no_of_adults', 'no_of_children', 'no_of_weekend_nights',
@@ -19,7 +18,7 @@ st.subheader("By Ashwini Audhutwar")
 #        'room_type_reserved', 'lead_time', 'arrival_year', 'arrival_month',
 #        'arrival_date', 'market_segment_type', 'repeated_guest',
 #        'no_of_previous_cancellations', 'no_of_previous_bookings_not_canceled',
-#        'avg_price_per_room', 'no_of_special_requests'
+#        'avg_price_per_room', 'no_of_special_requests'    
 
 adult_count = st.number_input(label="Number of Adults",min_value=1,max_value=15,step=1)
 children_count = st.number_input(label="Number of children",min_value=1,max_value=15,step=1)
